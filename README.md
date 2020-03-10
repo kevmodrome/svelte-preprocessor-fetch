@@ -56,12 +56,6 @@ Create a function called `getStaticProps()` in your script tag and do your fetch
 </script>
 
 <main>
-  <h1>Hello {data}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
   <h2>Continents:</h2>
   <ul>
     {#each data.continents as { name }}
