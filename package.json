@@ -1,19 +1,48 @@
 {
   "name": "svelte-preprocessor-fetch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A preprocessor for Svelte can be used to fetch data before the component is compiled.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/module.js",
   "repository": "https://github.com/kevmodrome/svelte-preprocessor-fetch",
   "keywords": [
     "svelte",
     "preprocess",
     "fetch"
   ],
+  "scripts": {
+    "compile": "rollup -c"
+  },
   "author": "Kevin Åberg Kultalahti",
   "license": "MIT",
   "dependencies": {
     "acorn": "^7.1.1",
     "acorn-walk": "^7.1.1",
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/register": "7.8.6",
+    "rollup": "2.0.3",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-node-resolve": "5.2.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": 8
+          }
+        }
+      ]
+    ],
+    "env": {
+      "test": {
+        "sourceMaps": "inline"
+      }
+    }
   }
 }
