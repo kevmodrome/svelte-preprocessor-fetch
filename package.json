@@ -1,6 +1,6 @@
 {
   "name": "svelte-preprocessor-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A preprocessor for Svelte can be used to fetch data before the component is compiled.",
   "main": "index.js",
   "keywords": [
