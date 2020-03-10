@@ -69,4 +69,4 @@ Create a function called `getStaticProps()` in your script tag and do your fetch
 
 ## Caveats
 
-This preprocess is probably extremely brittle, PRs are welcome to improve it further.
+This preprocessor is probably extremely brittle, PRs are welcome to improve it further.
