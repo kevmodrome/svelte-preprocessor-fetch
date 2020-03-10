@@ -33,7 +33,9 @@ export default {
 
 ### In components
 
-Create a function called `getStaticProps()` in your script tag and do your fetches here. The data is available using as `data` in your component.
+Create a function called `getStaticProps()` in your script tag and do your fetches here. The content of this function must be fully self-container. You can not use any variables from outside or import any packages. It has support for fetch via `node-fetch`.
+
+The data is available using as `data` in your component.
 
 ```html
 <script>
