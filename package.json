@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A preprocessor for Svelte can be used to fetch data before the component is compiled.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "svelte",
     "preprocess",
