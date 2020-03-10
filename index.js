@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const acorn = require("acorn");
 const walk = require("acorn-walk");
 
-export default function getStaticProps(options) {
+export default function preprocessFetch() {
   return {
     async script({ content }) {
       const tree = acorn.parse(content, { sourceType: "module" });
